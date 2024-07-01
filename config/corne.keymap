@@ -9,8 +9,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 &led_strip {
-//   chain-length = <0>;
-  chain-length = <27>;
+  chain-length = <0>;
+//   chain-length = <27>;
   // 21 backlight + 6 glowlight
 };
 
