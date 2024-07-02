@@ -10,7 +10,9 @@
 
 &led_strip {
     // chain-length = <0>;
+
     chain-length = <27>;
+
     // 21 backlight + 6 glowlight
 };
 
@@ -26,6 +28,44 @@
         command_tilde {
             bindings = <&kp LG(GRAVE)>;
             key-positions = <12 36>;
+        };
+
+        toast {
+            bindings = <&jd>;
+            key-positions = <37 40 11>;
+        };
+
+        pinc {
+            bindings = <&jd_pinc>;
+            key-positions = <37 40 23>;
+        };
+
+        pew {
+            bindings = <&pew>;
+            key-positions = <37 40 35>;
+        };
+    };
+
+    macros {
+        jd: jd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp J &kp D &kp AT &kp T &kp O &kp A &kp S &kp T &kp DOT &kp C &kp O &kp DOT &kp N &kp Z>;
+            label = "JD";
+        };
+
+        jd_pinc: jd_pinc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp J &kp D &kp AT &kp P &kp I &kp N &kp C &kp DOT &kp N &kp Z>;
+            label = "JD_PINC";
+        };
+
+        pew: pew {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp I &kp O &kp P &kp K &kp L &kp SEMI &kp LS(I) &kp LS(O) &kp LS(P) &kp LS(K) &kp LS(L) &kp COLON>;
+            label = "PEW";
         };
     };
 
