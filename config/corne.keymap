@@ -9,19 +9,24 @@
 #include <dt-bindings/zmk/keys.h>
 
 &led_strip {
-  chain-length = <0>;
-  // chain-length = <27>;
-  // 21 backlight + 6 glowlight
-};
+    chain-length = <0>;
 
+    // chain-length = <27>;
+    // 21 backlight + 6 glowlight
+};
 
 / {
     combos {
         compatible = "zmk,combos";
 
         terminal {
-            bindings = <&kp LC(TILDE)>;
+            bindings = <&kp LC(GRAVE)>;
             key-positions = <36 35>;
+        };
+
+        command_tilde {
+            bindings = <&kp LG(GRAVE)>;
+            key-positions = <37 12>;
         };
     };
 
