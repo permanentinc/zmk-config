@@ -13,7 +13,7 @@
         compatible = "zmk,combos";
 
         terminal {
-            bindings = <&kp LC(LG(TILDE))>;
+            bindings = <&kp LC(TILDE)>;
             key-positions = <36 35>;
         };
     };
@@ -59,10 +59,10 @@
             //                    | GUI |     | RET |   | SPACE |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp LA(LEFT_ARROW)  &kp UP_ARROW    &kp LA(RIGHT)  &kp LPAR          &kp RPAR           &kp LA(BSPC)
-&kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp LEFT            &kp DOWN_ARROW  &kp RIGHT      &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &trans              &trans          &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TILDE
-                             &kp LGUI  &trans    &kp RET      &kp SPACE           &trans          &kp RALT
+&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp LA(LEFT_ARROW)        &kp UP_ARROW                  &kp LA(RIGHT)          &kp LPAR          &kp RPAR           &kp LA(BSPC)
+&kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp LEFT                  &kp DOWN_ARROW                &kp RIGHT              &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp GRAVE
+&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp LS(LA(LC(LG(LEFT))))  &kp LS(LG(LA(LC(UP_ARROW))))  &kp LS(LA(LC(RIGHT)))  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TILDE
+                             &kp LGUI  &trans    &kp RET      &kp SPACE                 &trans                        &kp RALT
             >;
         };
     };
