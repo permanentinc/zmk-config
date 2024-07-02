@@ -9,6 +9,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        terminal {
+            bindings = <&kp LC(LG(TILDE))>;
+            key-positions = <36 35>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
