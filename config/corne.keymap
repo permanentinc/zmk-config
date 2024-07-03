@@ -142,10 +142,10 @@
             //                    | GUI |     | RET |   | SPACE |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL  &kp AT        &kp HASH  &kp DLLR  &kp PRCNT    &trans     &kp LA(LEFT)              &kp UP_ARROW                  &kp LA(RIGHT)              &kp PLUS   &kp LA(BSPC)
-&kp LCTRL  &kp AMPS  &kp ASTERISK  &trans    &trans    &trans       &trans     &kp LEFT_ARROW            &kp DOWN                      &kp RIGHT                  &kp MINUS  &kp GRAVE
-&kp LSHFT  &trans    &trans        &trans    &trans    &trans       &trans     &kp LS(LG(LA(LC(LEFT))))  &kp LS(LA(LC(LG(UP_ARROW))))  &kp LA(LC(LG(LS(RIGHT))))  &kp EQUAL  &kp TILDE
-                                   &kp LGUI  &trans    &kp RET      &kp SPACE  &trans                    &kp RALT
+&kp TAB    &kp EXCL  &kp AT        &kp HASH       &kp DLLR  &kp PRCNT    &trans     &kp LA(LEFT)              &kp UP_ARROW                  &kp LA(RIGHT)              &kp PLUS   &kp LA(BSPC)
+&kp LCTRL  &kp AMPS  &kp ASTERISK  &kp BACKSLASH  &trans    &trans       &trans     &kp LEFT_ARROW            &kp DOWN                      &kp RIGHT                  &kp MINUS  &kp GRAVE
+&kp LSHFT  &trans    &trans        &trans         &trans    &trans       &trans     &kp LS(LG(LA(LC(LEFT))))  &kp LS(LA(LC(LG(UP_ARROW))))  &kp LA(LC(LG(LS(RIGHT))))  &kp EQUAL  &kp TILDE
+                                   &kp LGUI       &trans    &kp RET      &kp SPACE  &trans                    &kp RALT
             >;
         };
 
