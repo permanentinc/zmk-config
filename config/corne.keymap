@@ -102,10 +102,10 @@
             //                    | GUI | LWR | ENT |   | SPC | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R                                     &kp T      &kp Y      &kp U                                     &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F                                     &kp G      &kp H      &kp J                                     &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V                                     &kp B      &kp N      &kp M                                     &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &rgblayer RGB_COLOR_HSB_VAL(117,90,50) 1  &kp RET    &kp SPACE  &rgblayer RGB_COLOR_HSB_VAL(249,94,49) 2  &kp RALT
+&kp TAB    &kp Q  &kp W  &kp E     &kp R                                      &kp T      &kp Y      &kp U                                     &kp I      &kp O    &kp P     &kp BSPC
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F                                      &kp G      &kp H      &kp J                                     &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V                                      &kp B      &kp N      &kp M                                     &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                         &kp LGUI  &rgblayer RGB_COLOR_HSB_VAL(182,100,50) 1  &kp RET    &kp SPACE  &rgblayer RGB_COLOR_HSB_VAL(114,94,49) 2  &kp RALT
             >;
         };
 
@@ -132,10 +132,19 @@
             //                    | GUI |     | RET |   | SPACE |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp LA(LEFT_ARROW)        &kp UP_ARROW                  &kp LA(RIGHT)          &kp LPAR          &kp RPAR           &kp LA(BSPC)
-&kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp LEFT                  &kp DOWN_ARROW                &kp RIGHT              &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp LS(LA(LC(LG(LEFT))))  &kp LS(LG(LA(LC(UP_ARROW))))  &kp LS(LA(LC(RIGHT)))  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TILDE
-                             &kp LGUI  &trans    &kp RET      &kp SPACE                 &trans                        &kp RALT
+&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &trans     &kp LA(LEFT)              &kp UP_ARROW              &kp LA(RIGHT)              &trans  &kp LA(BSPC)
+&kp LCTRL  &trans    &trans  &trans    &trans    &trans       &trans     &kp LEFT_ARROW            &kp DOWN                  &kp RIGHT                  &trans  &kp GRAVE
+&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &trans     &kp LS(LG(LA(LC(LEFT))))  &kp LS(LA(LC(UP_ARROW)))  &kp LA(LC(LG(LS(RIGHT))))  &trans  &kp TILDE
+                             &kp LGUI  &trans    &kp RET      &kp SPACE  &trans                    &kp RALT
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACE          &kp RIGHT_BRACE        &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                  &trans                 &trans  &trans
             >;
         };
     };
