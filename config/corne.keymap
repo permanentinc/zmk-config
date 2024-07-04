@@ -45,11 +45,6 @@
             bindings = <&kp LG(LS(Z))>;
             key-positions = <29 30>;
         };
-
-        applicationswitcher {
-            bindings = <&kp LG(TAB)>;
-            key-positions = <38 5>;
-        };
     };
 
     macros {
