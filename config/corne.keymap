@@ -26,21 +26,6 @@
             key-positions = <12 36>;
         };
 
-        toast {
-            bindings = <&jd>;
-            key-positions = <37 40 11>;
-        };
-
-        pinc {
-            bindings = <&jd_pinc>;
-            key-positions = <37 40 23>;
-        };
-
-        screenshot {
-            bindings = <&kp LG(LS(NUMBER_4))>;
-            key-positions = <37 40 0>;
-        };
-
         thirdlayer {
             bindings = <&mo 3>;
             key-positions = <37 40>;
@@ -54,6 +39,11 @@
         undo {
             bindings = <&kp LG(Z)>;
             key-positions = <38 39>;
+        };
+
+        redo {
+            bindings = <&kp LG(LS(Z))>;
+            key-positions = <29 30>;
         };
     };
 
