@@ -45,6 +45,16 @@
             bindings = <&kp LG(LS(Z))>;
             key-positions = <29 30>;
         };
+
+        previoustab {
+            bindings = <&kp LG(LS(TAB))>;
+            key-positions = <17 18>;
+        };
+
+        nexttab {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <5 6>;
+        };
     };
 
     macros {
