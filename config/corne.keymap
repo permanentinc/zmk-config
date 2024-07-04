@@ -41,11 +41,6 @@
             key-positions = <37 40 23>;
         };
 
-        pew {
-            bindings = <&pew>;
-            key-positions = <37 40 35>;
-        };
-
         screenshot {
             bindings = <&kp LG(LS(NUMBER_4))>;
             key-positions = <37 40 0>;
