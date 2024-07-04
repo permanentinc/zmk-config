@@ -21,11 +21,6 @@
     combos {
         compatible = "zmk,combos";
 
-        terminal {
-            bindings = <&kp LC(GRAVE)>;
-            key-positions = <36 35>;
-        };
-
         command_tilde {
             bindings = <&kp LG(GRAVE)>;
             key-positions = <12 36>;
