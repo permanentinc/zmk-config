@@ -65,6 +65,11 @@
             bindings = <&kp LG(RIGHT_BRACKET)>;
             key-positions = <40 37 31>;
         };
+
+        racast {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <29 30>;
+        };
     };
 
     macros {
