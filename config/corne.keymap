@@ -52,7 +52,7 @@
         };
 
         emoji {
-            bindings = <&none>;
+            bindings = <&kp LG(LC(SPACE))>;
             key-positions = <17 18>;
         };
 
