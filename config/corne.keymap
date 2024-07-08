@@ -55,6 +55,16 @@
             bindings = <&none>;
             key-positions = <17 18>;
         };
+
+        back {
+            bindings = <&kp LG(LEFT_BRACKET)>;
+            key-positions = <37 40 28>;
+        };
+
+        forward {
+            bindings = <&kp LG(RIGHT_BRACKET)>;
+            key-positions = <40 37 31>;
+        };
     };
 
     macros {
