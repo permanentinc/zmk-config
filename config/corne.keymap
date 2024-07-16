@@ -105,6 +105,11 @@
             bindings = <&kp LG(LEFT_ALT)>;
             key-positions = <19 20 21>;
         };
+
+        rightmeh2 {
+            bindings = <&kp LG(LC(LS(LEFT_ALT)))>;
+            key-positions = <31 33 32>;
+        };
     };
 
     macros {
