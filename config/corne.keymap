@@ -110,6 +110,11 @@
             bindings = <&kp LG(LC(LS(LEFT_ALT)))>;
             key-positions = <31 33 32>;
         };
+
+        layer4 {
+            bindings = <&mo 4>;
+            key-positions = <7 8 9>;
+        };
     };
 
     macros {
@@ -182,6 +187,15 @@
 &trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_NEXT  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &trans          &kp K_MUTE         &trans      &trans  &trans
                         &trans  &trans  &trans                  &trans                 &trans          &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(N5)    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans            &trans            &trans            &trans        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans            &trans            &trans            &trans        &trans  &trans  &trans  &trans  &trans  &trans
+                                            &trans            &trans            &trans        &trans  &trans  &trans
             >;
         };
     };
