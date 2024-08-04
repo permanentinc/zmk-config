@@ -115,6 +115,16 @@
             bindings = <&mo 4>;
             key-positions = <7 8 9>;
         };
+
+        leftsqairebrak {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <28 29>;
+        };
+
+        rightbrack {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <30 31>;
+        };
     };
 
     macros {
