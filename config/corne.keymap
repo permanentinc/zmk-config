@@ -11,7 +11,9 @@
 
 &led_strip {
     // chain-length = <0>;
+
     chain-length = <6>;
+
     // 21 backlight + 6 glowlight
 };
 
@@ -125,9 +127,6 @@
         };
     };
 
-    macros {
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -178,10 +177,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans          &kp C_VOLUME_UP    &trans      &trans  &kp C_VOLUME_UP
-&trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_NEXT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &trans          &kp K_MUTE         &trans      &trans  &trans
-                        &trans  &trans  &trans                  &trans                 &trans          &trans
+&trans  &trans  &kp EQUAL  &trans  &trans  &kp ASTERISK    &trans  &trans          &kp C_VOLUME_UP    &trans      &kp PLUS  &kp C_VOLUME_UP
+&trans  &trans  &kp SLASH  &trans  &trans  &trans          &trans  &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_NEXT  &trans    &trans
+&trans  &trans  &trans     &trans  &trans  &trans          &trans  &kp MINUS       &kp K_MUTE         &trans      &trans    &trans
+                           &trans  &trans  &trans          &trans  &trans          &trans
             >;
         };
 
