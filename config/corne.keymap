@@ -154,7 +154,7 @@
 
             bindings = <
 &kp TAB     &kp N1           &kp N2           &kp N3           &kp N4           &kp N5             &kp N6     &kp N7        &kp N8        &kp N9        &kp N0           &kp LA(BSPC)
-&bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1     &rgb_ug RGB_SAD  &rgb_ug RGB_BRI  &rgb_ug RGB_SAI    &kp MINUS  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_ASTERISK  &trans
+&bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1     &rgb_ug RGB_SAD  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG    &kp MINUS  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_ASTERISK  &trans
 &kp LSHFT   &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_HUI    &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT          &trans
                                               &kp LGUI         &trans           &kp RET            &kp SPACE  &kp NUMBER_0  &kp RALT
             >;
@@ -177,10 +177,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &kp EQUAL  &trans  &trans  &kp ASTERISK    &trans  &trans          &kp C_VOLUME_UP    &trans      &kp PLUS  &kp C_VOLUME_UP
-&trans  &trans  &kp SLASH  &trans  &trans  &trans          &trans  &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_NEXT  &trans    &trans
-&trans  &trans  &trans     &trans  &trans  &trans          &trans  &kp MINUS       &kp K_MUTE         &trans      &trans    &trans
-                           &trans  &trans  &trans          &trans  &trans          &trans
+&trans  &trans  &kp EQUAL  &trans  &trans     &kp ASTERISK     &trans  &trans          &kp C_VOLUME_UP    &trans      &kp PLUS  &kp C_VOLUME_UP
+&trans  &trans  &kp SLASH  &trans  &kp SLASH  &trans           &trans  &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_NEXT  &trans    &trans
+&trans  &trans  &trans     &trans  &trans     &kp BACKSLASH    &trans  &kp MINUS       &kp K_MUTE         &trans      &trans    &trans
+                           &trans  &trans     &trans           &trans  &trans          &trans
             >;
         };
 
