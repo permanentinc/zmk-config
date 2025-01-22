@@ -186,9 +186,9 @@
             //                    | GUI |     | RET |   | SPACE |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL  &kp AT          &kp HASH      &kp DLLR       &kp PRCNT    &trans     &kp LA(LEFT)              &mt RG(RC(RA(RS(UP_ARROW)))) UP_ARROW      &kp LA(RIGHT)              &kp PLUS   &kp DEL
-&kp LCTRL  &kp AMPS  &kp UNDERSCORE  &kp ASTERISK  &kp BACKSLASH  &kp PIPE     &trans     &kp LEFT_ARROW            &mt RG(RC(RA(RS(DOWN_ARROW)))) DOWN_ARROW  &kp RIGHT                  &kp MINUS  &kp GRAVE
-&kp LSHFT  &trans    &trans          &trans        &trans         &trans       &trans     &kp LS(LG(LA(LC(LEFT))))  &kp LS(LA(LC(LG(UP_ARROW))))               &kp LA(LC(LG(LS(RIGHT))))  &kp EQUAL  &kp TILDE
+&kp TAB    &kp EXCL  &kp AT          &kp HASH      &kp DLLR       &kp PRCNT    &trans     &kp LA(LEFT)              &mt RC(RA(RS(UP_ARROW))) UP_ARROW  &kp LA(RIGHT)              &kp PLUS   &kp DEL
+&kp LCTRL  &kp AMPS  &kp UNDERSCORE  &kp ASTERISK  &kp BACKSLASH  &kp PIPE     &trans     &kp LEFT_ARROW            &mt RC(RA(RS(DOWN))) DOWN_ARROW    &kp RIGHT                  &kp MINUS  &kp GRAVE
+&kp LSHFT  &trans    &trans          &trans        &trans         &trans       &trans     &kp LS(LG(LA(LC(LEFT))))  &kp LS(LA(LC(LG(UP_ARROW))))       &kp LA(LC(LG(LS(RIGHT))))  &kp EQUAL  &kp TILDE
                                      &kp LGUI      &trans         &kp RET      &kp SPACE  &trans                    &kp RALT
             >;
         };
