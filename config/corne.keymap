@@ -195,9 +195,9 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &kp EQUAL  &kp C_VOLUME_UP    &trans     &kp ASTERISK     &trans  &trans          &up_several    &trans      &kp PLUS  &kp C_VOLUME_UP
-&trans  &trans  &kp SLASH  &kp C_VOLUME_DOWN  &kp SLASH  &trans           &trans  &kp C_PREVIOUS  &down_several  &kp C_NEXT  &trans    &trans
-&trans  &trans  &trans     &kp K_MUTE         &trans     &kp BACKSLASH    &trans  &kp MINUS       &trans         &trans      &trans    &trans
+&trans  &trans  &kp EQUAL  &kp C_VOLUME_UP    &trans     &kp ASTERISK     &trans  &trans          &kp C_VOLUME_UP    &trans      &kp PLUS  &kp C_VOLUME_UP
+&trans  &trans  &kp SLASH  &kp C_VOLUME_DOWN  &kp SLASH  &trans           &trans  &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_NEXT  &trans    &trans
+&trans  &trans  &trans     &kp K_MUTE         &trans     &kp BACKSLASH    &trans  &kp MINUS       &kp K_MUTE         &trans      &trans    &trans
                            &trans             &trans     &trans           &trans  &trans          &trans
             >;
         };
