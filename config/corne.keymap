@@ -127,6 +127,11 @@
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <30 31>;
         };
+
+        cat {
+            bindings = <&kp LS(LG(LA(LC(G))))>;
+            key-positions = <16 19>;
+        };
     };
 
     macros {
@@ -196,7 +201,7 @@
         layer_3 {
             bindings = <
 &trans  &trans  &kp EQUAL  &kp C_VOLUME_UP    &trans     &kp ASTERISK     &trans  &trans          &kp C_VOLUME_UP    &trans      &kp PLUS  &kp C_VOLUME_UP
-&trans  &trans  &kp SLASH  &kp C_VOLUME_DOWN  &kp SLASH  &trans           &trans  &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_NEXT  &trans    &trans
+&trans  &trans  &kp SLASH  &kp C_VOLUME_DOWN  &kp SLASH  &kp PIPE         &trans  &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_NEXT  &trans    &trans
 &trans  &trans  &trans     &kp K_MUTE         &trans     &kp BACKSLASH    &trans  &kp MINUS       &kp K_MUTE         &trans      &trans    &trans
                            &trans             &trans     &trans           &trans  &trans          &trans
             >;
