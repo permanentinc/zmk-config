@@ -1,5 +1,28 @@
 on: [push, pull_request, workflow_dispatch]
- 
+
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      
+      - name: Install dependencies
+        run: |
+          pip install --user -U west
+
+      # Add this step to initialize and list the repositories managed by west
+      - name: Initialize ZMK and nice-view-gem
+        run: |
+          west update
+          west update -l  # List all the repos managed by west
+          west list         # List the projects being pulled in
+
+      - name: Build Firmware with ZMK
+        uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
