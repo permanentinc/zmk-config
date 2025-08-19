@@ -132,6 +132,21 @@
             bindings = <&kp LS(LG(LA(LC(G))))>;
             key-positions = <16 19>;
         };
+
+        less-than {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <29 28 27>;
+        };
+
+        greater-than {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <30 31 32>;
+        };
+
+        dewfault_pwd {
+            bindings = <&default_pwd>;
+            key-positions = <1 10>;
+        };
     };
 
     macros {
@@ -147,6 +162,13 @@
             #binding-cells = <0>;
             bindings = <&kp DOWN &kp DOWN_ARROW &kp DOWN_ARROW>;
             label = "DOWN_SEVERAL";
+        };
+
+        default_pwd: default_pwd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp J &kp D &kp AT &kp P &kp I &kp N &kp C &kp DOT &kp N &kp Z &kp TAB &kp D &kp A &kp M &kp H &kp E &kp G &kp MINUS &kp C &kp O &kp LS(H) &kp R &kp O &kp N1 &kp MINUS &kp Z &kp A &kp G &kp C &kp Y &kp N>;
+            label = "DEFAULT_PWD";
         };
     };
 
@@ -213,6 +235,15 @@
 &trans  &trans            &trans            &trans            &trans            &trans        &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans            &trans            &trans            &trans            &trans        &trans  &trans  &trans  &trans  &trans  &trans
                                             &trans            &trans            &trans        &trans  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
