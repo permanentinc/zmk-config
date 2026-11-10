@@ -1,0 +1,9 @@
+/*
+ * The corne shield defines the OLED as 128x32. If the panel is actually
+ * 128x64, only the top 32 rows are driven, so half the screen stays blank.
+ */
+&oled {
+    height = <64>;
+    multiplex-ratio = <63>;
+    /delete-property/ com-sequential;
+};
