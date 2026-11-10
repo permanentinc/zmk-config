@@ -9,6 +9,16 @@
 #include <dt-bindings/zmk/keys.h>
 
 /*
+ * The corne shield declares the OLED as 128x32. For a 128x64 panel, drive all
+ * 64 rows (loaded after the shield overlay, so the &oled label exists here).
+ */
+&oled {
+    height = <64>;
+    multiplex-ratio = <63>;
+    /delete-property/ com-sequential;
+};
+
+/*
 * &led_strip {
 *     // chain-length = <0>;
 * 
